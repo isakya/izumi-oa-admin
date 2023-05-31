@@ -64,6 +64,15 @@ export const constantRoutes = [
     alwaysShow: true,
     children: [
       {
+        name: 'sysMenu',
+        path: 'sysMenu',
+        component: () => import('@/views/system/sysMenu/list'),
+        meta: {
+          title: '菜单管理',
+          icon: 'el-icon-s-unfold'
+        },
+      },
+      {
         name: 'sysUser',
         path: 'sysUser',
         component: () => import('@/views/system/sysUser/list'),
