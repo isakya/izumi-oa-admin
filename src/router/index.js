@@ -64,6 +64,15 @@ export const constantRoutes = [
     alwaysShow: true,
     children: [
       {
+        path: 'assignAuth',
+        component: () => import('@/views/system/sysRole/assignAuth'),
+        meta: {
+          activeMenu: '/system/sysRole',
+          title: '角色授权'
+        },
+        hidden: true,
+      },
+      {
         name: 'sysMenu',
         path: 'sysMenu',
         component: () => import('@/views/system/sysMenu/list'),
