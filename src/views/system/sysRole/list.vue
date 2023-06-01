@@ -43,6 +43,7 @@
         type="success"
         icon="el-icon-plus"
         size="mini"
+        :disabled="$hasBP('bnt.sysRole.add') === false"
         @click="add"
       >添 加</el-button>
       <el-button

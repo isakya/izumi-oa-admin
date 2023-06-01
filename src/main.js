@@ -15,6 +15,9 @@ import router from './router'
 import '@/icons' // icon
 import '@/permission' // permission control
 
+//新增
+import hasBtnPermission from '@/utils/btn-permission'
+
 /**
  * If you don't want to use mock-server
  * you want to use MockJs for mock api
@@ -34,6 +37,7 @@ Vue.use(ElementUI, { locale })
 // Vue.use(ElementUI)
 
 Vue.config.productionTip = false
+Vue.prototype.$hasBP = hasBtnPermission
 
 new Vue({
   el: '#app',
