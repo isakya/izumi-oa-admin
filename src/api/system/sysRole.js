@@ -54,7 +54,12 @@ export default {
       method: 'get'
     })
   },
-
+  removeById(id) {
+    return request({
+      url: `${api_name}/remove/${id}`,
+      method: 'delete'
+    })
+  },
   assignRoles(assginRoleVo) {
     return request({
       url: `${api_name}/doAssign`,
